@@ -1,0 +1,107 @@
+.navbar {
+    position: relative;
+    background-color: var(--jordy-blue);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    flex-direction: column;
+    z-index: 999;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: center; /* adjust this line */
+    align-items: center; /* add this line */
+  }
+}
+
+
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+}
+
+.navbar .menu-items ul li a {
+  font-size: 2.5rem !important; 
+  font-weight: bold !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  margin: 20px 0 !important;
+}
+
+.navbar ul li a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: #cccccc;
+}
+
+.navbar ul li a:active {
+  color: #999999;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-button-line {
+  width: 2rem;
+  height: 0.25rem;
+  background: var(--main-color);
+  transition: all 0.3s linear;
+}
+
+.menu-open .menu-button-line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.menu-open .menu-button-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-open .menu-button-line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--highlight);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  text-decoration: none;
+}
+
+.menu-open .menu-items {
+  transform: translateX(0);
+}

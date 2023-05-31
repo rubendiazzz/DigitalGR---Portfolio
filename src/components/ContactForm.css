@@ -1,0 +1,29 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(186, 110, 65, 0.29);
+    width: 50%;
+    margin: auto;
+    max-width: 600px;
+}
+  
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: var(--highlight);
+    color: var(--main-color);
+}
+  
+.contact-form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--asparagus);
+    color: var(--main-color);
+    cursor: pointer;
+}

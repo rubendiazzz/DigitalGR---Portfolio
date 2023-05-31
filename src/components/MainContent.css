@@ -1,0 +1,32 @@
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background-color: transparent;
+  }
+  
+  .project {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .code-preview-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--asparagus);
+    color: var(--main-color);
+    cursor: pointer;
+  }
+  
